@@ -49,7 +49,7 @@ essen-und-trinken.de,techardar.com#@#.player_page_ad_box
 essen-und-trinken.de,techardar.com#@##player_ads
 !
 ! FuckAdBlock CSS
-fourtoutici.pro,blog.csdn.net,modelist-konstruktor.com,swatchseries.to,shopback.com.au,tsn.ua,zerohedge.com,flightaware.com,fourtoutici.top,peers.tv,umterps.com,thurrott.com,tideschart.com,orlygift.com,newkaliningrad.ru,sbs.com.au,bloomberg.com,observador.pt,phpscripttr.com,megagames.com,theralphretort.com,fourtoutici.xyz,xataka.com,postandcourier.com,nv-online.info,tumangaonline.com,thestar.co.uk,bold.dk,professorweb.ru,pixiz.com,flashgames.ru,mel.fm,blackdesertbase.ru,freegfxdownload.com,mp3cut.net,pri.org,mp3cut.ru,audio-cutter.com,online-audio-converter.com,audio-joiner.com,convert-video-online.com,online-video-cutter.com,online-voice-recorder.com,webcamera.io,extract.me,abw.ru,abw.by,lifehack.org,returnofreckoning.com,semantic-ui.com,fightnews.info,randaris-anime.net,iphonesoft.fr,tmohentai.com,kshowonline.com,topsante.com,topsante.com,getgreenshot.org,forexpeacearmy.com,pr-cy.ru,pokehuntr.com,theland.com.au,greenbayphoenix.com#$#.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links {display:block!important;}
+independent.co.uk,fourtoutici.pro,blog.csdn.net,modelist-konstruktor.com,swatchseries.to,shopback.com.au,tsn.ua,zerohedge.com,flightaware.com,fourtoutici.top,peers.tv,umterps.com,thurrott.com,tideschart.com,orlygift.com,newkaliningrad.ru,sbs.com.au,bloomberg.com,observador.pt,phpscripttr.com,megagames.com,theralphretort.com,fourtoutici.xyz,xataka.com,postandcourier.com,nv-online.info,tumangaonline.com,thestar.co.uk,bold.dk,professorweb.ru,pixiz.com,flashgames.ru,mel.fm,blackdesertbase.ru,freegfxdownload.com,mp3cut.net,pri.org,mp3cut.ru,audio-cutter.com,online-audio-converter.com,audio-joiner.com,convert-video-online.com,online-video-cutter.com,online-voice-recorder.com,webcamera.io,extract.me,abw.ru,abw.by,lifehack.org,returnofreckoning.com,semantic-ui.com,fightnews.info,randaris-anime.net,iphonesoft.fr,tmohentai.com,kshowonline.com,topsante.com,topsante.com,getgreenshot.org,forexpeacearmy.com,pr-cy.ru,pokehuntr.com,theland.com.au,greenbayphoenix.com#$#.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links {display:block!important;}
 !
 ! Evolok ev-dab.js (.pub_300x25)
 sunderlandecho.com,blackpoolgazette.co.uk,derbyshiretimes.co.uk,lep.co.uk,yorkshireeveningpost.co.uk,yorkshirepost.co.uk,peterboroughtoday.co.uk#$#.pub_300x25.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links {display:block!important;}
@@ -73,11 +73,12 @@ rulu.co#%#!function(b,a){AG_defineProperty('CloudflareApps.installs',{get:functi
 ##.kill-adblock-container
 !
 ! Admiral
-wokesloth.com,tenforums.com,majorgeeks.com#%#Object.defineProperty(window, 'admiral', { get: function() { throw null; }, set: function() { throw null; } });
+mangarock.com,wokesloth.com,tenforums.com,majorgeeks.com#%#Object.defineProperty(window, 'admiral', { get: function() { throw null; }, set: function() { throw null; } });
 !+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_ublock)
 @@||tpc.googlesyndication.com/safeframe^$domain=windowscentral.com|androidcentral.com
 windowscentral.com,androidcentral.com#%#AG_abortInlineScript(/,blockerScore:/, 'Promise');
 thewindowsclub.com#%#AG_abortInlineScript(/,blockerScore:/, 'Promise');
+||actuallysnake.com^$third-party
 ||referdriving.com^$third-party
 ||butterburst.com^$third-party
 ||82o9v830.com^$third-party
@@ -93,12 +94,14 @@ androidworld.it#%#AG_abortInlineScript(/enm.com/, 'navigator');
 !+ NOT_PLATFORM (windows, mac, android)
 @@||androidworld.it^$generichide
 !
+скачатьофис.рф##div[style="width: 300px; height: 250px;"]
+audiobyray.com###adblock_screen
 qrz.ru##.content > div[style="display: block;"]:has(> div > a[href="/help/adblock/"])
 ||web.cofp.ru/templates/webcofp_new/js/cookie_check.min.js
 blabber.buzz#@#.adg_row
 poncy.ru###hide-adblock
 ||magazeta.com/wp-content/uploads/*/*.js
-mks.space#$#.adsbygoogle { height: 0px!important; }
+mks.space#$#.adsbygoogle { height: 0!important; }
 mks.space#@#.adsbygoogle
 @@||mangafox.fun/adsbygoogle.js
 imtranslator.net#@#.adsBox
@@ -326,7 +329,7 @@ channel4.com###all4gn-adBlock-notification
 @@||vsadu.ru^$generichide
 @@||zoox18.com/img/adblock.gif
 @@||x18.xxx/img/adblock.gif
-@@/js/advertisement.js$~third-party,domain=lingust.ru
+@@/js/advertisement.js$~third-party,domain=spodio.ru|lingust.ru
 @@||valueresearchonline.com/ads.js
 @@||moviejones.de/lib/ads.js
 @@||d75ljpmh88vxs.cloudfront.net/web/js/showads.js
@@ -365,7 +368,7 @@ lionphysics4n.id###keep-ads
 spoiler.net##.pull-right:has(> div.banner-ad)
 xatakawindows.com##.js-img-adb
 thedigitalfix.com###plead
-thedigitalfix.com#$#body { margin-top: 0px!important; }
+thedigitalfix.com#$#body { margin-top: 0!important; }
 thedigitalfix.com#%#Object.defineProperty(window, 'adCheck', { value: 0 });
 anison.fm##.rightb_in
 desu.me##.xyz_wrapper_inner
@@ -583,7 +586,7 @@ wamiz.com##blockquote#adblocker
 okkazeo.com###ads
 @@||streamplay.gdn/js/ads*.js|
 @@||powvideo.net/js/ads-banner.js
-screenrant.com#%#Object.defineProperty(window, 'ads_blocker', { get: function() { return; } });     
+screenrant.com#%#Object.defineProperty(window, 'ads_blocker', { get: function() { return; } });
 screenrant.com##body .lb-ad-blocker
 @@||wamiz.com/css/ads.css
 freiepresse.de##body > div[id][style^="z-index:"]
@@ -957,7 +960,7 @@ germancarforum.com##.noticeBox
 hard-tm.ru##.baseHtml.noticeContent
 ixbt.com#%#fuckAdBlock = function() {};
 kivvi.kz##.kivvi_social
-kttc.ru#$#.generateka { border: none!important; height: 0px!important; }
+kttc.ru#$#.generateka { border: none!important; height: 0!important; }
 lifehacker.com.au##.ad-block-message
 medicalxpress.com#%#window.blockAdBlock = function() {};
 motherless.com###_mlabd
@@ -1100,12 +1103,12 @@ outlook.live.com#$##primaryContainer > div[style*="right: 165px;"] { width: 100%
 outlook.live.com##div[class="_n_h"][style*="width: 305px;"]
 outlook.live.com#$##primaryContainer > div[style*="right: 305px;"] { width: 100% !important; }
 !
-soccer.ru#$##beforecontent > div.region-beforecontent > div.block-block { height: 0px!important; }
+soccer.ru#$##beforecontent > div.region-beforecontent > div.block-block { height: 0!important; }
 soccer.ru#$##main_body > div#left.sidebar { margin: 0px 0 0!important; }
 @@||soccer.ru/sites/all/themes/mytheme/advert.js
 !
 hardware.info#%#AG_onLoad(function() { $("#brTopContainer").remove(); } );
-hardware.info#$##brTopContainer { height: 0px!important; min-height: 0px!important; }
+hardware.info#$##brTopContainer { height: 0!important; min-height: 0!important; }
 !
 pornreactor.cc,joyreactor.cc,reactor.cc$$script[tag-content="typeof jr_js_loaded"][max-length="700"]
 pornreactor.cc,joyreactor.cc,reactor.cc#%#Object.defineProperty(document, 'write', { get: function() { return {}; } });

@@ -215,9 +215,9 @@ opnevmonii.ru,bodytrain.ru,vvinograd.ru,zemlyaki.name,felomena.com#%#AG_abortInl
 ://block.*.com/rotator-v2/*.js
 !
 !+ NOT_PLATFORM(windows, mac, android)
-forumodua.com,dengi.ua,bookfi.net,zaxid.net,real-vin.com,hdreactor.club,kinoafisha.ua,simpsonsua.com.ua,glavcom.ua,filmitorrent.org,tabfilm.ru,etextlib.ru,kurs.com.ru,isport.ua,lostfilm-online.org,strana.ua,telegraf.in.ua,24tv.ua,ria-m.tv,kaztorka.org,segodnya.ua,dengi.ua,allboxing.ru#%#AG_abortInlineScript(/!function\(\)/, 'String.fromCharCode');
+forumodua.com,bookfi.net,zaxid.net,real-vin.com,hdreactor.club,kinoafisha.ua,simpsonsua.com.ua,glavcom.ua,filmitorrent.org,tabfilm.ru,etextlib.ru,kurs.com.ru,isport.ua,lostfilm-online.org,strana.ua,telegraf.in.ua,24tv.ua,ria-m.tv,kaztorka.org,segodnya.ua,allboxing.ru#%#AG_abortInlineScript(/!function\(\)/, 'String.fromCharCode');
 !+ NOT_PLATFORM(windows, mac, android)
-kino-hd720.net,kinoskala.net,mirknig.su,112.ua,kinopad.club,vsetv.com,kp.ua,newsyou.info,kino-fs.ucoz.net,ex-fs.net,sinoptik.com.ru,hvylya.net#%#AG_abortInlineScript(/\/\*[0-9a-f]{40}\*\//, 'String.fromCharCode');
+dengi.ua,kino-hd720.net,kinoskala.net,mirknig.su,112.ua,kinopad.club,vsetv.com,kp.ua,newsyou.info,kino-fs.ucoz.net,ex-fs.net,sinoptik.com.ru,hvylya.net#%#AG_abortInlineScript(/\/\*[0-9a-f]{40}\*\//, 'String.fromCharCode');
 !+ NOT_PLATFORM(windows, mac, android)
 tushkan-tv.net#%#AG_onLoad(function() { for (var key in window) { if (key.indexOf('_0x') == 0) { window[key] = function() { }; } }; });
 !+ NOT_PLATFORM(windows, mac, android)
@@ -269,7 +269,8 @@ dni.ru$$script[tag-content="var sc = document.createElement"][max-length="400"]
 !+ NOT_PLATFORM(windows, mac, android)
 @@||an.yandex.ru/system/context.js$domain=dni.ru
 !+ NOT_PLATFORM(windows, mac, android)
-@@||yastatic.net/pcode/adfox/loader.js$domain=dni.ru
+@@||yastatic.net/pcode/adfox/loader.js$domain=dni.ru#%#AG_abortInlineScript(/\/\*[0-9a-f]{40}\*\//, 'String.fromCharCode');
+
 ! https://github.com/AdguardTeam/AdguardFilters/issues/12158
 @@||suj.li/assets/xnew/js/fuckadblock.js
 @@||suj.li^$generichide
@@ -491,7 +492,7 @@ gismeteo.by,gismeteo.ru$$div[tag-content="Yandex.RTB"][max-length="3900"]
 quto.ru,rns.online,championat.com,gazeta.ru,lenta.ru,rambler.ru$$script[tag-content="AntiAdBlock"][min-length="5000"][max-length="350000"]
 !+ NOT_PLATFORM(windows, mac, android)
 !quto.ru,rns.online,championat.com,gazeta.ru,lenta.ru,rambler.ru#%#AG_abortInlineScript(/AntiAdBlock/, 'document.currentScript');
-rns.online,championat.com,gazeta.ru,lenta.ru,rambler.ru#%#if (typeof localStorage != 'undefined' && localStorage.setItem) { localStorage.setItem('59ad5cf6ff822bb246153e3340a3c9e9', '0'); }
+rns.online,championat.com,gazeta.ru,lenta.ru,rambler.ru#%#if (typeof localStorage != 'undefined' && localStorage.setItem) { localStorage.setItem('015b3105afa6247d0c156fc3c1db72a4', '0'); }
 !! # if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android)
 !! # endif
 !
@@ -675,15 +676,10 @@ e.mail.ru#@#.b-slot_banner
 @@||ad.mail.ru/adp/?q*_SITEID$domain=mail.ru|sportmail.ru
 !
 ! minigames.mail.ru - ads replacement script
+!+ NOT_PLATFORM(windows, mac, android)
+minigames.mail.ru#%#AG_abortInlineScript(/rb_load_slot/, '$');
+minigames.mail.ru$$script[tag-content="rb_load_slot"]
 mail.ru$$script[tag-content="TabWindowVisibilityManager"][max-length="7000"]
-!+ NOT_PLATFORM(windows,mac,android)
-minigames.mail.ru##.container > div[class]:not([id]) > div[style]:not(:first-child)
-!+ NOT_PLATFORM(windows,mac,android)
-@@||an.yandex.ru/page/*?target-ref=$domain=minigames.mail.ru
-!+ NOT_PLATFORM(windows,mac,android)
-@@||an.yandex.ru/resource/context_static_r_*.js$domain=minigames.mail.ru
-!+ NOT_PLATFORM(windows,mac,android)
-@@||an.yandex.ru/system/context.js$domain=minigames.mail.ru
 !*
 !
 ! go.mail.ru
@@ -1201,11 +1197,14 @@ yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru,yandex.ua$$styl
 ! changed old
 ||afisha.yandex.*/static/main.js$replace=/function r\(e\,t\,n\)\{f\._e\(n\)\,p.detect/function r\(e\,t\,n\)\{return;var __x=/
 ||static-mon.yandex.net/static/main.js?pid=$replace=/function r\(e\,t\,n\)\{f\._e\(n\)\,p.detect/function r\(e\,t\,n\)\{return;var __x=/
-||static-mon.yandex.net/static/main.js?pid=kinopoisk.ru$replace=/function r\(e\,t\,n\)\{f\._e\(n\)\,p.detect/function r\(e\,t\,n\)\{return;var __x=/,important
+||static-mon.yandex.net/static/main.js?pid=kinopoisk.ru$replace=/[\s\S]+/this.init=function(){}/,important
+||static-mon.yandex.net/static/main.js?pid=autoru$replace=/[\s\S]+/this.init=function(){}/,important
 ! domains with an old style
 ! ||static-mon.yandex.net/static/main.js?pid=$domain=24smi.org|auto.ru|avito.ru|avtovzglyad.ru|baby.ru|businessman.ru|dni.ru|drive2.com|drive2.ru|e1.ru|echo.msk.ru|fb.ru|forexpf.ru|gismeteo.kz|gismeteo.md|gismeteo.ua|gismeteo.by|gismeteo.ru|glav.su|gorodrabot.ru|infoniac.ru|it-tehnik.ru|kakprosto.ru|kinopoisk.ru|liveinternet.ru|mathb-ege.sdamgia.ru|mk.ru|nkj.ru|ohotniki.ru|oko-planet.su|otzovik.com|pikabu.ru|rambler.ru|razlozhi.ru|sdamgia.ru|syl.ru|tsargrad.tv|vz.ru,replace=/function r\(e\,t\,n\){f\.u\(n\)\,p.detect/function r(e\,t\,n){return;var __x=/
 ! domains with changed old style
-||static-mon.yandex.net/static/main.js?pid=$domain=24smi.org|auto.ru|avito.ru|avtovzglyad.ru|baby.ru|businessman.ru|dni.ru|drive2.com|drive2.ru|e1.ru|echo.msk.ru|fb.ru|forexpf.ru|gismeteo.kz|gismeteo.md|gismeteo.ua|gismeteo.by|gismeteo.ru|glav.su|gorodrabot.ru|infoniac.ru|it-tehnik.ru|kakprosto.ru|kinopoisk.ru|liveinternet.ru|mathb-ege.sdamgia.ru|mk.ru|nkj.ru|ohotniki.ru|oko-planet.su|otzovik.com|pikabu.ru|rambler.ru|razlozhi.ru|sdamgia.ru|syl.ru|tsargrad.tv|vz.ru,replace=/function r\(e\,t\,n\)\{f\._e\(n\)\,p.detect/function r\(e\,t\,n\)\{return;var __x=/
+!||static-mon.yandex.net/static/main.js?pid=$domain=24smi.org|auto.ru|avito.ru|avtovzglyad.ru|baby.ru|businessman.ru|dni.ru|drive2.com|drive2.ru|e1.ru|echo.msk.ru|fb.ru|forexpf.ru|gismeteo.kz|gismeteo.md|gismeteo.ua|gismeteo.by|gismeteo.ru|glav.su|gorodrabot.ru|infoniac.ru|it-tehnik.ru|kakprosto.ru|kinopoisk.ru|liveinternet.ru|mathb-ege.sdamgia.ru|mk.ru|nkj.ru|ohotniki.ru|oko-planet.su|otzovik.com|pikabu.ru|rambler.ru|razlozhi.ru|sdamgia.ru|syl.ru|tsargrad.tv|vz.ru,replace=/function r\(e\,t\,n\)\{f\._e\(n\)\,p.detect/function r\(e\,t\,n\)\{return;var __x=/
+! ! domains with an old style
+||static-mon.yandex.net/static/main.js?pid=$replace=/[\s\S]+/this.init=function(){}/,domain=24smi.org|auto.ru|avito.ru|avtovzglyad.ru|baby.ru|businessman.ru|dni.ru|drive2.com|drive2.ru|e1.ru|echo.msk.ru|fb.ru|forexpf.ru|gismeteo.kz|gismeteo.md|gismeteo.ua|gismeteo.by|gismeteo.ru|glav.su|gorodrabot.ru|infoniac.ru|it-tehnik.ru|kakprosto.ru|liveinternet.ru|mathb-ege.sdamgia.ru|mk.ru|nkj.ru|ohotniki.ru|oko-planet.su|otzovik.com|pikabu.ru|rambler.ru|razlozhi.ru|sdamgia.ru|syl.ru|tsargrad.tv|vz.ru,important
 ! Main page
 ||yastatic.net/www/*.js$replace=/home.getData\("adb.data"\);/home.getData("adb.data");return;/
 ! other sites(+ 24smi.org)

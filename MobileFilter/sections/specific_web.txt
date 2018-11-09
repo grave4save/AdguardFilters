@@ -38,6 +38,8 @@ anwap.club,anwap.film,anwap.mobi##body > div[class] > a > strong
 !+ NOT_PLATFORM(ios, ext_android_cb)
 ||mobile.donanimhaber.com/ads^
 !
+m.halihali.tv##a[href^="https://s.click.taobao.com/"] > img
+indianexpress.com##.adbox-border
 mdpr.jp##.recommend-dd-link
 rocketnews24.com###related-posts
 fnn.jp##.Ad
@@ -175,6 +177,8 @@ toucharcade.com##header > #header > .ta_mobileScrollMessage
 boards.4chan.org##body > iframe[id^="ag"][src="about:blank"]
 m.perfectgirls.net##.banner-wrapper-static
 spiegel.de##amp-ad
+4pda.ru##body > [style*="zoom:0."] > a > img
+4pda.ru##body > div#appbanner ~ * [style*="zoom:0."] > a > img
 4pda.ru##body > a[role="button"]
 4pda.ru##body > div[style*="zoom:"]
 m.anysex.com##.top_b
@@ -429,7 +433,7 @@ giga.de##.BC-Container
 ||giga.de/static-local/dist/theme/assets/js/module/giga-*.mobile-stopper.js
 ||andro-news.com/images/content/andronews_banner_
 ||andro-news.com/images/content/for_website_andro_news.jpg
-memurlar.net###news_detailContainer > div[style="text-align:center; margin:auto;  min-width:300px; min-height:250px"]
+memurlar.net###news_detailContainer > div[style="text-align:center; margin:auto; min-width:300px; min-height:250px"]
 bilgihanem.com##div[style*="min-height:250px;"][style*="min-width:250px;"][style*="justify-content:center"]
 uludagsozluk.com##.entry-list > div[style*="width:"][style*="margin"]
 wibroporn.com###ivr-mobil

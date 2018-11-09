@@ -112,13 +112,13 @@ proxytpb.pw,vizer.tv,eztv.unblocked.sh,piratbaypirate.link,animeshow.tv,vidzi.tv
 !
 ! 9anime.is side ads
 !! Blocking scripts
-/(readcomiconline|kimcartoon|kiss-anime|9anime|gogoanimes?|toonova|animeflv|animeplus|goodanime|animewow|animenova|animeland|animetoon|mangapanda|memecenter|mangareader|mangafreak)\.[a-z]{2,4}\/[s\S]*\/[-_a-zA-Z0-9]{22,}/$script,domain=mangafreak.net|gogoanimes.co|gogoanime.sh|kiss-anime.tv|mangapanda.com|memecenter.com|mangareader.net|animeland.tv|animetoon.org|animenova.org|animewow.org|goodanime.co|animeplus.tv|animeflv.net|toonova.net|gogoanime.to|gogoanime.se|gogoanime.in|9anime.is|kiss-anime.me|kimcartoon.me|readcomiconline.to
+/(watchcartoononline|readcomiconline|kimcartoon|kiss-anime|9anime|gogoanimes?|toonova|animeflv|animeplus|goodanime|animewow|animenova|animeland|animetoon|mangapanda|memecenter|mangareader|mangafreak)\.[a-z]{2,4}\/[s\S]*\/[-_a-zA-Z0-9]{22,}/$script,domain=watchcartoononline.com|mangafreak.net|gogoanimes.co|gogoanime.sh|kiss-anime.tv|mangapanda.com|memecenter.com|mangareader.net|animeland.tv|animetoon.org|animenova.org|animewow.org|goodanime.co|animeplus.tv|animeflv.net|toonova.net|gogoanime.to|gogoanime.se|gogoanime.in|9anime.is|kiss-anime.me|kimcartoon.me|readcomiconline.to
 ! /(readcomiconline|kimcartoon|kiss-anime|9anime|gogoanime|toonova|animeflv|animeplus|goodanime|animewow|animenova|animeland|animetoon|mangapanda|memecenter|mangareader)\.[a-z]{2,4}\/(?!(assets|Content|cover|images|img|js|player|scripts|thumbs|Uploads|wp-content)\/)[-_a-zA-Z0-9]{4,}\/[-_a-zA-Z0-9]{2,}\/[-_a-zA-Z0-9]{2,}\/[-_a-zA-Z0-9]{1,}/$domain=mangapanda.com|memecenter.com|mangareader.net|animeland.tv|animetoon.org|animenova.org|animewow.org|goodanime.co|animeplus.tv|animeflv.net|toonova.net|gogoanime.to|gogoanime.se|gogoanime.in|9anime.is|kiss-anime.me|kimcartoon.me|readcomiconline.to
 /thumbs^$script,domain=mangapanda.com|memecenter.com|mangareader.net|animeland.tv|animetoon.org|animenova.org|animewow.org|goodanime.co|animeplus.tv|animeflv.net|toonova.net|gogoanime.to|gogoanime.se|gogoanime.in|9anime.is|kiss-anime.me|kimcartoon.me|readcomiconline.to
 !! Blocking pictures
 /(readcomiconline|kimcartoon|kiss-anime|9anime|gogoanime|toonova|animeflv|animeplus|goodanime|animewow|animenova|animeland|animetoon|mangapanda|memecenter|mangareader)\.[a-z]{2,4}\/[-_a-zA-Z0-9]{3,}\/[-_a-zA-Z0-9]{20,}.(gif|jpg|png)/$domain=gogoanime.sh|mangapanda.com|memecenter.com|mangareader.net|animeland.tv|animetoon.org|animenova.org|animewow.org|goodanime.co|animeplus.tv|animeflv.net|toonova.net|gogoanime.to|gogoanime.se|gogoanime.in|9anime.is|9anime.to|kiss-anime.me|kimcartoon.me|readcomiconline.to
-mangafreak.net,gogoanimes.co,gogoanime.sh,watchcartoononline.io,animeland.me,mangapanda.com,memecenter.com,mangareader.net,animeland.tv,animetoon.org,animenova.org,animewow.org,goodanime.co,animeplus.tv,animeflv.net,toonova.net,gogoanime.to,gogoanime.se,gogoanime.in,9anime.is,kiss-anime.me,kimcartoon.me,readcomiconline.to##div[style*="visibility:hidden;"] > div[style*="z-index"] > a[href][rel*="nofollow"][rel*="noindex"]
-mangafreak.net,gogoanimes.co,gogoanime.sh,watchcartoononline.io,animeland.me,mangapanda.com,memecenter.com,mangareader.net,animeland.tv,animetoon.org,animenova.org,animewow.org,goodanime.co,animeplus.tv,animeflv.net,toonova.net,gogoanime.to,gogoanime.se,gogoanime.in,9anime.is,9anime.to,kiss-anime.me,kimcartoon.me,readcomiconline.to##div > div[id][style*="overflow:"][style*="hidden;"][style*="height:"]
+watchcartoononline.com,mangafreak.net,gogoanimes.co,gogoanime.sh,watchcartoononline.io,animeland.me,mangapanda.com,memecenter.com,mangareader.net,animeland.tv,animetoon.org,animenova.org,animewow.org,goodanime.co,animeplus.tv,animeflv.net,toonova.net,gogoanime.to,gogoanime.se,gogoanime.in,9anime.is,kiss-anime.me,kimcartoon.me,readcomiconline.to##div[style*="visibility:hidden;"] > div[style*="z-index"] > a[href][rel*="nofollow"][rel*="noindex"]
+watchcartoononline.com,mangafreak.net,gogoanimes.co,gogoanime.sh,watchcartoononline.io,animeland.me,mangapanda.com,memecenter.com,mangareader.net,animeland.tv,animetoon.org,animenova.org,animewow.org,goodanime.co,animeplus.tv,animeflv.net,toonova.net,gogoanime.to,gogoanime.se,gogoanime.in,9anime.is,9anime.to,kiss-anime.me,kimcartoon.me,readcomiconline.to##div > div[id][style*="overflow:"][style*="hidden;"][style*="height:"]
 kiss-anime.me,kimcartoon.me##div > div[id][style*="overflow: hidden"][style*="width: 300px;"][style*="height: 250px"][style*="flex"]
 ! no referrer anymore for ad request
 ||kimcartoon.me/Scripts^$image
@@ -126,6 +126,15 @@ kiss-anime.me,kimcartoon.me##div > div[id][style*="overflow: hidden"][style*="wi
 ! /(readcomiconline|kimcartoon|kiss-anime|9anime|gogoanime|toonova|animeflv|animeplus|goodanime|animewow|animenova|animeland|animetoon|mangapanda|memecenter|mangareader)\.[a-z]{2,4}\/(?!(assets|scripts|player)\/)[a-zA-Z0-9]{4,}[\s\S]*.js/$domain=mangapanda.com|memecenter.com|mangareader.net|animeland.tv|animetoon.org|animenova.org|animewow.org|goodanime.co|animeplus.tv|animeflv.net|toonova.net|gogoanime.to|gogoanime.se|gogoanime.in|9anime.is|kiss-anime.me|kimcartoon.me|readcomiconline.to
 ! /(readcomiconline|kimcartoon|kiss-anime|9anime|gogoanime|toonova|animeflv|animeplus|goodanime|animewow|animenova|animeland|animetoon|mangapanda|memecenter|mangareader)\.[a-z]{2,4}\/(?!(assets|scripts|player)\/)[a-zA-Z0-9]{4,}[\s\S]a*\/[a-zA-Z0-9]{4,}[\s\S]*.js/$domain=mangapanda.com|memecenter.com|mangareader.net|animeland.tv|animetoon.org|animenova.org|animewow.org|goodanime.co|animeplus.tv|animeflv.net|toonova.net|gogoanime.to|gogoanime.se|gogoanime.in|9anime.is|kiss-anime.me|kimcartoon.me|readcomiconline.to
 !
+mtlblog.com###article-text > div.awrapper
+mangarock.com###taboola-below-article-thumbnails-last-page-vertical
+independent.co.uk##.section-content .premium-content  
+rapidvideo.com##a[href^="//trafficlord.net/"]
+rapidvideo.com##body > div[style^="height:30px; text-align:center; background-color:"]:not([class]):not([id])
+||wikifeet.com/xvideo.js
+||hotanime.io/ads/
+audiobyray.com##.cat-carousel
+mail.yahoo.com##div[data-name="infinite-scroll-content"] > ul > li[data-test-id="infinite-scroll-PENCIL"]
 ||imgrock.pw/lksgx.js
 ||imgoutlet.pw/amload.js
 ||imgoutlet.pw/ckkenkxrhem.js
@@ -2853,7 +2862,7 @@ xhamster.com##.xplayer-banner-bottom
 ||patchsoftwares.com/wp-content/uploads/*/*banner-
 ||goo.gl$domain=patchsoftwares.com
 duplichecker.com##.duplia
-stun:1755001826:443
+stun:1755001826:443$important
 apkmb.com##.widget-area > aside[id^="text-"]
 apkmb.com##.entry-content > center > .btnDownload
 mobilapk.com##.adsbygoogle
@@ -3415,7 +3424,7 @@ nuvid.com###wrapper > div[style="height:440px; margin-bottom:15px;"]
 nuvid.com##.aside > h2 + .rel_right:empty
 rule34hentai.net###main > div.blockbody
 porndig.com##.pop_parent
-prettifyjs.net,uglifyjs.net,prettifycss.com,uglifycss.com,numgen.org,pwdgen.org,pdfspl.com,pdfmrg.com,base64encode.org,urlencoder.org,urldecoder.org,base64decode.org##[class^="banner_"]
+base64decode.org,base64encode.org,numgen.org,pdfmrg.com,pdfspl.com,prettifycss.com,prettifyjs.net,pwdgen.org,strlength.com,strreverse.com,uglifycss.com,uglifyjs.net,urldecoder.org,urlencoder.org##[class^="banner_"]
 cookiesflix.com###HTML2
 ||bit.ly^$popup,domain=adshort.me
 yourlust.com##body .is-bnr.kt-player .fp-bnr
@@ -6992,6 +7001,9 @@ lxax.com###parrot
 /^https?:\/\/([a-z0-9]{8,10}\.)?[a-z0-9]{5,14}\.(com|bid|online|top|club)\/([a-z0-9]{2}\/){3}[a-f0-9]{32}\.js$/$script,third-party
 /^http?:\/\/[a-z]{8,14}\.(bid|club|co|com|me|pro|info)\/[a-z]{1,12}\.(aspx|php|html|htm)\?r=[0-9]{1}[\s\S]*v=/$script,third-party,domain=realtimetv.me|seelive.me
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/24940
+!+ PLATFORM(ios, ext_android_cb)
+hotanime.me##.ads-block
 ! https://github.com/AdguardTeam/CoreLibs/issues/587
 !+ NOT_OPTIMIZED
 ||by218us.cdndm5.com/25^

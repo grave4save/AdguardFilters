@@ -6,6 +6,9 @@
 !
 ! Generic rules
 ||cdn.swellrewards.com^$third-party
+! AppNexus CMP popups
+/cmp/cmp.*.js
+/cmp/cmp.js
 !
 ! extensions promo
 ||api.callpage.io/*/widgets^$third-party
@@ -69,6 +72,24 @@
 !
 ! Specific sites
 !
+independent.co.uk##.footer-prompt.sticky
+indigowild.com##.email-signup-modal-content
+indigowild.com##.modal-overlay
+~sklep.player.pl,player.pl##.__ipPerunElement[style^="position: fixed; z-index:"]
+ispaniagid.ru#$#body { overflow: visible!important; }
+ispaniagid.ru#$#.modal-backdrop { display: none!important; }
+ispaniagid.ru#$#.miha-popup { display: none!important; }
+acsi-eurocampings.ru##.js-popup[data-type="footer"]
+simyo.es##.cortinillaHome
+evvelcevap.com##.snp-overlay
+evvelcevap.com##body .snp-bld-showme
+evvelcevap.com##.fancybox-wrap.snp-wrap
+evvelcevap.com##.fancybox-overlay[class*="snp-pop-"]
+lightinthebox.com##.pop_up.ctr-track-show
+baikal-daily.ru#$##bdModal { display: none!important; }
+baikal-daily.ru#$#.modal-backdrop { display: none!important; }
+baikal-daily.ru#$#body { overflow: visible!important; }
+||gaua.hit.gemius.pl/*/rexdot.js
 inforeactor.ru##.sn_groupblock
 beru.ru##div[data-zone-name="EmailSubscriptionForm"]
 beru.ru#$#.modal_js_inited { display: none!important; }
@@ -133,7 +154,7 @@ galesburg.com###dialog-message.slideDown
 msn.com##.fbpopup-container
 stiripesurse.ro###gdpr-modal
 superiorwallpapers.com#$#html.uk-modal-page { overflow: visible!important; }
-superiorwallpapers.com#$#body[style="padding-right: 17px;"] { overflow: visible!important; padding-right: 0px!important; }
+superiorwallpapers.com#$#body[style="padding-right: 17px;"] { overflow: visible!important; padding-right: 0!important; }
 superiorwallpapers.com#$##subscribe.uk-modal { display: none!important; }
 skagen.com#$#.modals-overlay { display:none!important; }
 skagen.com#$#.newsletter-content-popup {display:none!important; }
@@ -425,7 +446,7 @@ motortrend.com##.newsletter-signup-module
 coolutils.com##.leadinModal
 canliperiscopeizle.com#$##likeus { display: none!important; }
 canliperiscopeizle.com#$##likeus ~ .modal-backdrop { display: none!important; }
-canliperiscopeizle.com#$#body.modal-open { overflow: visible!important; padding-right: 0px!important; }
+canliperiscopeizle.com#$#body.modal-open { overflow: visible!important; padding-right: 0!important; }
 rp5.by,rp5.kz,rp5.ru,rp5.ua###declare
 hola.com###webpush-modal
 hola.com##.gigya-background-layer
@@ -1098,6 +1119,10 @@ com-magazin.de##w-div[role$="dialog"]
 ||sud.ua/js/jquery.arcticmodal*.min.js
 ||turkusozu.com/js/fancybox/
 ||ufatime.ru/st/libs/magnific/jquery.magnific-popup.min.js
+!
+diamante-wear.com#$#.newsletter__popup { display: none!important; }
+diamante-wear.com#$#.popup__opened { overflow: visible!important; }
+!
 ! https://github.com/AdguardTeam/AdguardFilters/issues/23317
 mediaworld.it#%#document.cookie = "hidenewsletter=1";
 ! https://github.com/AdguardTeam/AdguardFilters/issues/22272
@@ -1114,8 +1139,8 @@ turizm.ru#$#html:has(> body) { overflow: visible!important; }
 turizm.ru#$#body:has(> div) { overflow: visible!important; }
 turizm.ru##.fancybox-overlay:has(> div)
 !
-trudohrana.ru,pedrada.com.ua,zdrav.ru,law.ru,26-2.ru,mcfr.kz,sekretariat.ru,gkh.ru,fd.ru#$#body { overflow: visible!important; }
-trudohrana.ru,pedrada.com.ua,zdrav.ru,law.ru,26-2.ru,mcfr.kz,sekretariat.ru,gkh.ru,fd.ru#$#.megaShadow { display: none!important; }
+kdelo.ru,trudohrana.ru,pedrada.com.ua,zdrav.ru,law.ru,26-2.ru,mcfr.kz,sekretariat.ru,gkh.ru,fd.ru#$#body { overflow: visible!important; }
+kdelo.ru,trudohrana.ru,pedrada.com.ua,zdrav.ru,law.ru,26-2.ru,mcfr.kz,sekretariat.ru,gkh.ru,fd.ru#$#.megaShadow { display: none!important; }
 !
 fotostrana.ru#$#.fs2-newsignup-popup { display: none!important; }
 fotostrana.ru#$#.fs2-login-popup { display: none!important; }
@@ -1127,7 +1152,7 @@ accuweather.com#$#body { overflow:visible!important; }
 accuweather.com#$#.fc-consent-root { display:none!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/17131
 freshline.gr#$#.fancybox-is-modal:not(.fancybox-is-zoomable) { display: none!important; }
-freshline.gr#$#body.fancybox-active { overflow: visible!important; margin-right: 0px!important; }
+freshline.gr#$#body.fancybox-active { overflow: visible!important; margin-right: 0!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/16962
 ipon.hu#$#.noscroll { overflow:visible!important; }
 ipon.hu#$##gdpr-popup { display:none!important; }
@@ -1199,7 +1224,7 @@ voxel.com.br#$##js-modal-triad { display: none!important; }
 voxel.com.br#$##qm-modal-background { display: none!important; }
 voxel.com.br#$#body.qm-disable-scroll { overflow: visible!important; position: static!important; }
 !
-armani.com#$#html[style^="margin-right:"]:has(>body) { overflow: visible!important; margin-right: 0px!important; }
+armani.com#$#html[style^="margin-right:"]:has(>body) { overflow: visible!important; margin-right: 0!important; }
 !
 themoneyhabit.org#$#.featherlight { display: none!important; }
 themoneyhabit.org#$#html.with-featherlight[-ext-has=">body"] { overflow: visible!important; }
@@ -1224,7 +1249,7 @@ whispersinthecorridors.com#$#body { overflow: visible!important; }
 whispersinthecorridors.com#$#body > div.modal { display: none!important; }
 whispersinthecorridors.com#$#.modal-backdrop { display: none!important; }
 !
-kraftrecipes.com#$#body.modal-open { overflow: visible!important; padding-right: 0px!important; }
+kraftrecipes.com#$#body.modal-open { overflow: visible!important; padding-right: 0!important; }
 kraftrecipes.com#$#.modal-backdrop { display: none!important; }
 kraftrecipes.com#$#.kraft-modal.fade.modal { display: none!important; }
 !
@@ -1279,9 +1304,9 @@ bitdefender.com#$#body { overflow: visible!important; }
 m.wikipedia.org###frbanner3
 m.wikipedia.org##.banner-container
 wikipedia.org#$#body > #centralNotice { display:none!important; }
-wikipedia.org#$##mw-head { top:0px!important; }
+wikipedia.org#$##mw-head { top: 0!important; }
 wikipedia.org#$##mw-head-base { display:none!important; }
-wikipedia.org#$##mw-panel { top:0px!important; }
+wikipedia.org#$##mw-panel { top: 0!important; }
 m.wikipedia.org##div[class^="frbanner"]
 !
 gordonua.com#$##socialModal { display: none!important; }

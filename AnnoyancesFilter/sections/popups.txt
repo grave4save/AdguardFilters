@@ -72,6 +72,11 @@
 !
 ! Specific sites
 !
+u.gg###main-content > .discord-notification
+maxstock.co.il##.dsticky
+business.ru##.slideBannerContainer
+memepedia.ru##.spu-bg
+memepedia.ru##.spu-box
 independent.co.uk##.footer-prompt.sticky
 indigowild.com##.email-signup-modal-content
 indigowild.com##.modal-overlay
@@ -190,11 +195,11 @@ kino-coin.online###blockpopup
 maskinbladet.dk##.popup-nyhedsbrev-wrapper
 bestvpnrating.com##.popup-overlap
 sportfood40.ru##.informer.flying
-mel.fm##body > div.b-coach-mark 
+mel.fm##body > div.b-coach-mark
 agesecrets.ru##.slidebox-spec-cb
 automotogarage.ru##.subscribe-win
 firstonetv.net#$#body > div[class]:empty + div[class][style="display: block;"] { display:none!important; }
-firstonetv.net#$#body > div[class]:empty { position: absolute!important; left: -3000px!important; } 
+firstonetv.net#$#body > div[class]:empty { position: absolute!important; left: -3000px!important; }
 pcsecrets.ru##.popmake-overlay:has(> div)
 pcsecrets.ru#$#html:has(> body) { overflow: visible!important; }
 serfery.ru#$#body { overflow: visible!important; }
@@ -384,7 +389,6 @@ euroinvision.ru###fancybox-overlay
 euroinvision.ru##.fancybox-desktop[style*="width: 420px; height: auto;"]
 aksamhaberleri.com.tr###socialslide
 airlinehaber.com,guneydoguguncel.com###ilgisistemi
-gazete365.com##.kosehbr
 konhaber.com###alertHaber
 sonhaber.com.tr##.inginizicekebilirContiner
 karamangundem.com##.modal-backdrop
@@ -413,7 +417,7 @@ blogthetech.com##.td-more-articles-box
 rasthaber.com##.notification-box
 photoshoplady.com##.wph-modal
 birsence.com##.td-more-articles-box
-canakkaletv.com.tr,haber16.com,projemlak.com,turgutluyanki.com,teknolojic.com##.kosehbr
+gazeteyenigun.com.tr,iskilipinsesi.com,gazete365.com,canakkaletv.com.tr,haber16.com,projemlak.com,turgutluyanki.com,teknolojic.com##.kosehbr
 dermoloji.com##.greensboro-background
 palitranews.az###exestylepopupdiv
 azertag.az##.notification-container
@@ -766,7 +770,7 @@ adbuff.com##.ppsPopupShell
 livestrong.com##.newsletter_signup_overlay
 community.spiceworks.com###photo-join-modal[data-modal-el="overlay"]
 groupon.com,groupon.co.uk,groupon.be,groupon.fr###subscribe_modal_container
-groupon.com,groupon.co.uk,groupon.be,groupon.fr###subscribe_modal_container ~ #spotlight 
+groupon.com,groupon.co.uk,groupon.be,groupon.fr###subscribe_modal_container ~ #spotlight
 tradeciety.com##.cp-modal-popup-container
 fairbinaryoptions.com##.popup-banner.overlay.normal
 ren.tv###box-view-wrapper
@@ -828,7 +832,7 @@ ncp.az##.modal-bg.open
 ncp.az##.gift-modal
 dzone.com##.emailSubscriptionsPopover5
 esenyurthaberleri.com#%#AG_onLoad(function() { setTimeout(function() { document.body.className = document.body.className.replace("jconfirm-noscroll",""); }, 500); });
-creativemarket.com##.modal-welcome 
+creativemarket.com##.modal-welcome
 creativemarket.com###modal-overlay
 connect-trojan.net###fb-fanbox
 afyonprestij.com##body > div#kodac
@@ -838,7 +842,7 @@ afyonajans.com##body > div#kodac
 gizmochina.com##.boxzilla-subscribe-boxilla-button
 line.do##facebook-like-box
 segodnya.ua##.mailing-popup
-segodnya.ua###overlay 
+segodnya.ua###overlay
 tvfru.ru###fancybox-overlay
 tvfru.ru##.fancybox-wrap
 wsj.com##.login-section-container[amp-access="NOT access"]
@@ -1139,8 +1143,8 @@ turizm.ru#$#html:has(> body) { overflow: visible!important; }
 turizm.ru#$#body:has(> div) { overflow: visible!important; }
 turizm.ru##.fancybox-overlay:has(> div)
 !
-kdelo.ru,trudohrana.ru,pedrada.com.ua,zdrav.ru,law.ru,26-2.ru,mcfr.kz,sekretariat.ru,gkh.ru,fd.ru#$#body { overflow: visible!important; }
-kdelo.ru,trudohrana.ru,pedrada.com.ua,zdrav.ru,law.ru,26-2.ru,mcfr.kz,sekretariat.ru,gkh.ru,fd.ru#$#.megaShadow { display: none!important; }
+business.ru,kdelo.ru,trudohrana.ru,pedrada.com.ua,zdrav.ru,law.ru,26-2.ru,mcfr.kz,sekretariat.ru,gkh.ru,fd.ru#$#body { overflow: visible!important; }
+business.ru,kdelo.ru,trudohrana.ru,pedrada.com.ua,zdrav.ru,law.ru,26-2.ru,mcfr.kz,sekretariat.ru,gkh.ru,fd.ru#$#.megaShadow { display: none!important; }
 !
 fotostrana.ru#$#.fs2-newsignup-popup { display: none!important; }
 fotostrana.ru#$#.fs2-login-popup { display: none!important; }
@@ -1264,7 +1268,7 @@ wired.com#$#body[style="overflow: hidden;"] { overflow: visible!important; }
 mic.com#%#if (typeof localStorage != 'undefined' && localStorage.setItem) { localStorage.setItem('new_user_modal_show_dates', '[9999999999]'); }
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/5525
-photobucket.com#$#.modal-backdrop { display: none!important; } 
+photobucket.com#$#.modal-backdrop { display: none!important; }
 photobucket.com#$#body.modal-open { overflow: visible!important; }
 !
 uinterview.com#$##myNewsModal { display: none!important; }

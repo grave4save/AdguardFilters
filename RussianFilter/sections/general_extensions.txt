@@ -211,7 +211,7 @@ yap.ru,yaplakal.com#%#AG_onLoad(function() { window.vbm = function() {}; });
 hlamer.ru#%#AG_onLoad(function() { $('body').unbind('click'); });
 ! https://forum.adguard.com/index.php?threads/9751/
 lostpix.com#%#(function() { window.open_ = window.open; var w_open = window.open, regex = /torzilla.ru/; window.open = function(a, b) { if (typeof a !== 'string' || !regex.test(a)) { w_open(a, b); } }; })();
-lostpix.com#%#AG_onLoad(function() { setTimeout(function() {window.open = window.open_;}, 300); });  
+lostpix.com#%#AG_onLoad(function() { setTimeout(function() {window.open = window.open_;}, 300); });
 ! tfilm.club - удаление отступа сверху
 tfilm.club#%#AG_onLoad(function(){ document.getElementById("body").style.paddingTop = "0px"; });
 ! https://github.com/AdguardTeam/ExperimentalFilter/issues/1906
@@ -968,9 +968,7 @@ lets-play.tv#$##branding {padding-top: 0!important; }
 new-rutor.org#$#body { padding: 0 0 0!important; }
 !
 ! ok.ru - ads in the right column
-ok.ru#$##hook_Block_LeftColumnAdCustom { position: absolute!important; left: -3000px!important; }
 ok.ru#$##hook_Block_ForthColumnTopBanner { position: absolute!important; left: -3000px!important; }
-ok.ru#$##hook_Block_StickyBannerContainer { position: absolute!important; left: -3000px!important; }
 ok.ru#$#.dialogWrapperBanner * { height: 0!important; }
 ok.ru#$#div[id^="hook_Banner"] * { height: 0!important; }
 ! roem.ru - удаление брендированного фона, отступа сверху
@@ -1159,6 +1157,7 @@ fast-torrent.ru,fasttorrent.ru#$#body { background: none!important;}
 ! newstudio.tv - удаление отступа сверху
 newstudio.tv#$#body {padding-top: 0!important; }
 ! gamebomb.ru - удаление фонового изображения, отступа сверху, исправление курсора
+gamebomb.ru#$#body { background-color: #303030!important; }
 gamebomb.ru#$##content.site-max-width { margin-top: 0!important; }
 gamebomb.ru#$#body > div[id^="wrapper"] >div[id] { background: none!important; }
 gamebomb.ru#$##content { cursor: default!important; }
@@ -1249,7 +1248,7 @@ smotret-anime.ru$$script[tag-content="var el = document.getElementById"][max-len
 ! kg-portal.ru - удаление отступа сверху
 kg-portal.ru$$style[tag-content="height:"][max-length="800"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/17771
-oster-vip.com.ua,anisima.ru,placeclean.ru,elise.com.ua,3aaa-sp.ru,kinoferma.com,hd1080.info,etcetera.media,sverhestestvennoe.me,opnevmonii.ru,linza.guru,kino-fox.com,bodytrain.ru,mothersguide.ru,turkseason.com,woman365.ru,kriminal.net.ua,nanogah.com,2019god.net,omj.ru,novosti-n.org,podrobnosti.ua,hronika.info,kinorezka.net,avtozakony.ru,pojrem.ru$$script[tag-content="window.RESOURCE_"][max-length="100"]
+magictemple.ru,zakulisi.ru,oster-vip.com.ua,anisima.ru,placeclean.ru,elise.com.ua,3aaa-sp.ru,kinoferma.com,hd1080.info,etcetera.media,sverhestestvennoe.me,opnevmonii.ru,linza.guru,kino-fox.com,bodytrain.ru,mothersguide.ru,turkseason.com,woman365.ru,kriminal.net.ua,nanogah.com,2019god.net,omj.ru,novosti-n.org,podrobnosti.ua,hronika.info,kinorezka.net,avtozakony.ru,pojrem.ru$$script[tag-content="window.RESOURCE_"][max-length="100"]
 $$script[tag-content="window.RESOURCE_"][max-length="100"]
 ! htapop
 kinozal-tv.appspot.com$$script[tag-content="var __htapop = {};"][max-length="400"]

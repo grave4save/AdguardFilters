@@ -25,6 +25,9 @@ video.gjirafa.com#%#AG_defineProperty('originVideo.requestA.Id', { value: "0" })
 !---------------------------------------------------------------------
 !------------------------------ Arabian ------------------------------
 !---------------------------------------------------------------------
+! https://github.com/AdguardTeam/AdguardFilters/issues/25281
+!+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_ublock)
+@@||droidtk.com^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24150
 asia2tv.co###scpsec
 asia2tv.co###video-container
@@ -807,6 +810,9 @@ m.dnvod.tv#%#AG_onLoad(function() { setTimeout(function() { document.getElementB
 m.dnvod.tv#$#.top-bar > h3.text-over { display:none!important; }
 m.dnvod.tv#$#.video-box > .video-box { display:none!important; }
 ! Fixing EasyList China
+classic.dnvod.tv#@?#[data-code] > :not(object)
+classic.dnvod.tv#@?#[data-code] > [target="_blank"]
+classic.dnvod.tv#@?#[data-code] > :not([pluginspage="http://www.macromedia.com/go/getflashplayer"])
 @@||dnvod.tv/api/video/play
 @@||dnvod.tv/404.mp4
 @@||m.dnvod.tv/fontawesome-webfont
@@ -1718,7 +1724,7 @@ gamestar.hu##.ad
 gamestar.hu##a[href*="ad.adverticum.net"]
 gamestar.hu#$#.ad-skin-space { height: 50px!important; }
 gamestar.hu##.background
-zsibvasar.hu#%#AG_onLoad(function() { $('a[target="_blank"]:not([href*="zsibvasar.hu"]').closest('.item').remove(); $('.carousel-inner > .item')[0].classList.add("active") });  
+zsibvasar.hu#%#AG_onLoad(function() { $('a[target="_blank"]:not([href*="zsibvasar.hu"]').closest('.item').remove(); $('.carousel-inner > .item')[0].classList.add("active") });
 zsibvasar.hu##a[href^="http://optimusnumizmatika"]
 hazipatika.com###box-humanmeteorologia
 ||media.hazipatika.com/szponzor_hatter^
@@ -1805,7 +1811,7 @@ oralhoes.com###vid-ads
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11664
 ||sextubehub.com/js/htpop.js
 ||sextubehub.com/xx/o.php$empty
-sextubehub.com#%#AG_onLoad(function() { setTimeout(function() { document.getElementsByClassName("video-holder")[0].removeAttribute("onclick");}, 300); });      
+sextubehub.com#%#AG_onLoad(function() { setTimeout(function() { document.getElementsByClassName("video-holder")[0].removeAttribute("onclick");}, 300); });
 sextubehub.com#%#window.open = function() {};
 sextubehub.com#%#var _st = window.setTimeout; window.setTimeout = function(a, b) { if(!/window\.location\.href = '\/xx\/o\.php/.test(a)){ _st(a,b);}};
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11731
@@ -1948,6 +1954,9 @@ bhaskar.com#%#var canABP = true;
 !---------------------------------------------------------------------
 !------------------------------ Indonesian ---------------------------
 !---------------------------------------------------------------------
+! https://github.com/AdguardTeam/AdguardFilters/issues/25345
+otakuindo.net##.ads
+otakuindo.net##a[href^="https://bit.ly/"][target="_blank"] > img
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24441
 gudangmovies21.cc##.s_right > #text-2
 gudangmovies21.cc##.s_right > #text-3
@@ -1993,9 +2002,12 @@ indoxx1.com#%#AG_onLoad(function(){ var a=document.getElementById('content-embed
 hightech.web.id#@##banner_ad
 ! https://github.com/AdguardTeam/AdguardFilters/issues/19453
 @@||teknologilink.com/js/advertisement.js
+! https://github.com/AdguardTeam/AdguardFilters/issues/25349
 ! https://github.com/AdguardTeam/AdguardFilters/issues/19216
-kompas.com#%#AG_abortInlineScript(/isIframeNetworking/, 'Math.random');
-kompas.com$$script[tag-content=`={"isIframeNetworking":false,"mappings":[{"selector":"link[href*='min.css?v=']","url":""`][max-length="9000"]
+kompas.com#%#AG_abortInlineScript(/isIframeNetworking/, 'document.addEventListener');
+tribunnews.com,kompas.com#%#Object.defineProperty(window, '$JabK', { get: function(){ throw null; }, set: function(){ throw null; }});
+tribunnews.com,kompas.com$$script[tag-content=`={"isIframeNetworking":false,"mappings":[{"selector":"link[href*=`][max-length="15000"]
+tribunnews.com$$script[wildcard="(function(){try{*=d.createElement(""script"");*.tribunnews.com/*.body).appendChild(*"][max-length="400"]
 kompas.com##.kcm__rectangle > .sticky__rectangle
 kompas.com##.kcm__horizontal > a.kcm__close.js-kcm-horizontal
 !+ PLATFORM(ext_opera, ios, ext_android_cb)
@@ -2007,11 +2019,14 @@ kompas.com##.kcm__horizontal > a.kcm__close.js-kcm-horizontal
 ! https://github.com/AdguardTeam/AdguardFilters/issues/19004
 sosiali.com#$#.adsbygoogle { height: 0!important; }
 sosiali.com#@#.adsbygoogle
+! https://github.com/AdguardTeam/AdguardFilters/issues/24805
 ! https://github.com/AdguardTeam/AdguardFilters/issues/18637
-nekopoi.cash,nekopoi.lol##div[class^="adsgen"]
+linkpoi.in##center > a[href][target="_blank"] > img
+nekopoi.care###sidebar_right > .widget_text > .custom-html-widget > a[href^="http://bit.ly/"] > img
+nekopoi.ga##.container > .row > .col-xs-12 > div[style="text-align:center;"]:not([class]):not([id])
+nekopoi.care,nekopoi.cash,nekopoi.lol##div[class^="adsgen"]
 nekopoi.cash##.ero > .leftarea
-@@||nekopoi.lol/wp-content/themes/ThemeNekopoi/js/adsbygoogle.js
-@@||nekopoi.cash/wp-content/themes/ThemeNekopoi/js/adsbygoogle.js
+@@||nekopoi.*/wp-content/themes/ThemeNekopoi/js/adsbygoogle.js$~third-party
 ! https://github.com/AdguardTeam/AdguardFilters/issues/15681
 @@||ad4msan.com/wp-content/uploads/static/bg-logo.png
 ! https://github.com/AdguardTeam/AdguardFilters/issues/15514
@@ -2025,7 +2040,7 @@ dunia21.tv###middle-banner
 dunia21.tv###float-bottom-banner
 ||dunia21.tv/assets/*.gif$domain=dunia21.tv
 ! https://github.com/AdguardTeam/AdguardFilters/issues/12616
-dwindly.io#%#AG_onLoad(function() { setTimeout(function() {var click = document.getElementById("btd"); link = click.onclick.toString().split(";"); link1 = link[0].split(")"); link2 = link1[1].split("("); link3 = link2[1] + "(" + link2[2] + ")"; document.location.href = eval(link3); }, 300); });     
+dwindly.io#%#AG_onLoad(function() { setTimeout(function() {var click = document.getElementById("btd"); link = click.onclick.toString().split(";"); link1 = link[0].split(")"); link2 = link1[1].split("("); link3 = link2[1] + "(" + link2[2] + ")"; document.location.href = eval(link3); }, 300); });
 dwindly.io##.adBtn
 dwindly.io#$#.adBtn {position: absolute!important; left: -3000px!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/12590
@@ -2693,6 +2708,19 @@ dap-news.com##.ads
 !---------------------------------------------------------------------
 !------------------------------ Korean -------------------------------
 !---------------------------------------------------------------------
+! https://github.com/AdguardTeam/AdguardFilters/issues/25255
+!+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_ublock)
+@@||plok01234.tistory.com^$generichide
+!+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_ublock)
+plok01234.tistory.com##.adsbygoogle
+! https://github.com/AdguardTeam/AdguardFilters/issues/25167
+jimnong.tistory.com#@#.adsbygoogle
+jimnong.tistory.com###sidebar .adsbygoogle
+jimnong.tistory.com##div[align="center"] > .adsbygoogle
+! https://github.com/AdguardTeam/AdguardFilters/issues/23658
+||wasabisyrup.com/template/plugin02.js
+||partner.toptoon.com/assets/files/banner^
+||partner.toptoon.com/out^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24548
 hellven.net###fboardlist > a[href].thumbnail
 hellven.net##a[href^="https://hellven.net/bbs/adver_link.php"]
@@ -3095,7 +3123,7 @@ soft98.ir#$#body img[src*=".ml"] { display: block!important; visibility: hidden!
 !soft98.ir#$#body > #content-top ~ .container[id*="-special"]:has(img[src*=".ml"]) { max-height: 0!important; visibility: hidden!important; }
 ! soft98.ir#$#body > #content-top + .container[id*="-wide"]:has(img[src*=".ml"]) { max-height: 0!important; visibility: hidden!important; }
 !+ PLATFORM(windows, android, mac)
-soft98.ir/templates/soft98_default/js/jquery$replace=/\|antibot\|[\s\S]*\|main\|download/\|antibot\|body\|main\|download/
+soft98.ir/templates/soft98_default/js/jquery$replace=/\|antibot\|(\|)?[\s\S]*\|main\|download/\|antibot\|\$1body\|main\|download/
 soft98.ir##a[rel="nofollow"][title][href][target="_blank"]:not([class])
 languagedownload.ir###content > article[id^="post-"].type-sticky.status-publish
 languagedownload.ir###content > article[id^="post-"] > .entry-summary > div[data-post-id].insert-page
@@ -3152,6 +3180,19 @@ dziwneobrazki.pl#$#.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.t
 ! adquesto
 forsal.pl,kresy.pl,mambiznes.pl,prnews.pl,weszlo.com#%#AG_abortInlineScript(/getAdBlock/, 'parseInt');
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/25329
+chomikuj.pl###InboxTable > tbody > tr > td.dataCell > p.spons
+chomikuj.pl###InboxTable > tbody > tr > td.dataCell + td > a[href*="/lp/"][href*="/?aid="][href*="&utm_campaign=default"]
+chomikuj.pl###InboxTable > tbody > tr:has(> td.dataCell > p.spons)
+! https://github.com/AdguardTeam/AdguardFilters/issues/25182
+||kinonet.pl/css/images/player.gif
+kinonet.pl##a[href^="https://brumflix.com/"]
+kinonet.pl##.float-xl-left > .card.mb-3:has(> .card-body > a[href^="https://brumflix.com/"])
+!+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_ublock)
+@@||kinonet.pl^$generichide
+! https://github.com/AdguardTeam/AdguardFilters/issues/25285
+otopress.pl##.pierwsza_reklameczka_part
+otopress.pl#$#.adsbygoogle { position: absolute!important; left: -3000px!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24717
 tv.wp.pl##div[class*=" "][height]:has(> img[src^="https://v.wpimg.pl/"][src$="=="]:not([alt]))
 tv.wp.pl#$#.AdUnit.adBanner.adsbox.adsinfo.mixadvert { display: block!important; }
@@ -3614,6 +3655,8 @@ interia.pl#%#document.cookie = "lltsg=1";
 !---------------------------------------------------------------------
 !------------------------------ Romanian -----------------------------
 !---------------------------------------------------------------------
+! https://github.com/AdguardTeam/AdguardFilters/issues/25320
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=antenaplay.ro
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24936
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=antena3.ro
 ||ivm.antenaplay.ro/fadead_check.php$domain=antena3.ro
@@ -3834,6 +3877,8 @@ topsinhalamp3.com###sitbl > tbody > tr[-ext-has='a[href^="https://ylx-4.com"]']
 !---------------------------------------------------------------------
 !------------------------------ Taiwan -------------------------------
 !---------------------------------------------------------------------
+! https://github.com/AdguardTeam/AdguardFilters/issues/25146
+@@||alotof.software/wp-content/themes/alosss/ads.php
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24476
 getrelax.club#%#AG_abortInlineScript(/#adisblock/, '$');
 getrelax.club#$#.playno1_ad_test { height: 101px!important; position: absolute!important; left: -3000px!important; }
@@ -4102,7 +4147,7 @@ blogtruyen.com#%#Object.defineProperty(window, 'btpop', { get: function() { retu
 blogtruyen.com##.qc-inner-move
 ! https://github.com/AdguardTeam/AdguardFilters/issues/23669
 saostar.vn#$#.trang-chi-tiet { margin-top: 0!important; }
-saostar.vn##.full-width-banner-ads  
+saostar.vn##.full-width-banner-ads
 saostar.vn##.banner-middle
 ! https://github.com/AdguardTeam/AdguardFilters/issues/23591
 nhanhtv.net##.ad_location

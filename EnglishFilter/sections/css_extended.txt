@@ -1,6 +1,11 @@
 !
 ! Extended CSS rules
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/25054
+apkpure.com##.right > .box:has(> div[style^="position: relative;"] > a[href^="https://dealspure.com/Deals?utm_source="])
+apkpure.com###iframe_download + .slide-wrap > .bd > .tempWrap > ul[style^="width: 1656px;"] > li[style*="float: left; width: 828px;"]:has(> a[href^="https://yaksgames.com/?utm_source"])
+! https://github.com/AdguardTeam/AdguardFilters/issues/25276
+androidpolice.com###ap-body > .primary > .post[-ext-has='a[href^="https://www.androidpolice.com/author/sponsored-post"]']
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24899
 wikifeet.com###content > .dashboard > .dash2:has(> .dashtitle > h3:contains(Advertisement))
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24884
@@ -37,7 +42,7 @@ softpedia.com##.main > div[class^="container_"] > div[class$="_30 grid_48"]:has(
 ! https://github.com/AdguardTeam/AdguardFilters/issues/21090
 ! facebook.com,facebookcorewwwi.onion##div[id^="substream_"] div[id^="hyperfeed_story_id_"][-ext-has='[id^="feed_subtitle_"] > span[class][role=presentation] + span[class]:matches-css(display: none)']
 facebook.com,facebookcorewwwi.onion##div[id^="substream_"] div[id^="hyperfeed_story_id_"][-ext-has='[id*="feed_subtitle_"] > span[class][role=presentation] + span[class]:matches-css(display: none)']
-facebook.com,facebookcorewwwi.onion##div[id^="substream_"] div[id^="hyperfeed_story_id_"]:has(div.d_gj-ysfupy > .n_gj-ysddak)
+! facebook.com,facebookcorewwwi.onion##div[id^="substream_"] div[id^="hyperfeed_story_id_"]:has(div.d_gj-ysfupy > .n_gj-ysddak) --- breaks newsfeed
 ! https://github.com/AdguardTeam/AdguardFilters/issues/21497
 readheroacademia.com###main > .chapter_coin > center:has(> h3 > strong:contains(Advertisement))
 readheroacademia.com###main > .code-block[style] > center:has(> h3 > strong:contains(Advertisement))
@@ -52,7 +57,9 @@ nytimes.com,nytimes3xbfgragh.onion###app > div[class^="css-"][class*=" "]:not([d
 filikula.co##.idTabs > li[-ext-has='a[href^="#tab-ad"]']
 ! https://github.com/AdguardTeam/AdguardFilters/issues/21149
 javfor.me##.content-wrapper > .container > .row:not(#player-row)[-ext-has='a[href*="media.r18.com/track"]']
+! https://github.com/AdguardTeam/AdguardFilters/issues/25057
 ! https://github.com/AdguardTeam/AdguardFilters/issues/20956
+telerium.tv##body > div[id]:has(iframe[src*="rsc.cdn77.org/"])
 telerium.tv##body > div[id]:has(iframe[src^="//teleriumads-"])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/20817
 geekdrop.com###forum > div[align="center"]:has(> a[href^="https://x.geekdrop.com/"])
@@ -157,7 +164,7 @@ xtube.com##.wrapper > .container:has(>[class] > .adContainer)
 ! quora.com##.PromptsList > div[id][-ext-has='.advertiser_endpoint']
 ! quora.com##.paged_list_wrapper > .pagedlist_item:has(.advertiser_endpoint)
 ! quora.com##.actionable > .content_marker > .upper_content:has(.advertiser_url)
-! quora.com##.AnswerListDiv > .UnifiedAnswerPagedList > .paged_list_wrapper > div[id][-ext-has='a[href][disable_auto_login][target="_blank"]'] 
+! quora.com##.AnswerListDiv > .UnifiedAnswerPagedList > .paged_list_wrapper > div[id][-ext-has='a[href][disable_auto_login][target="_blank"]']
 ! quora.com##.grid_page > .layout_2col_main > div[id]:not(.AnswerListDiv)[-ext-has='a[href][disable_auto_login][target="_blank"]']
 !! top ad in questions
 !quora.com##.grid_page > .layout_2col_main > div[id]:not(.AnswerListDiv):not(.answer_text_small):not(:last-child)[-ext-has='a[href][target="_blank"][rel="noopener nofollow"]']
@@ -169,12 +176,12 @@ quora.com##.grid_page div[class][id] > div[class*=" "] > div[id^="__"]:has(a[hre
 ! quora.com##.UnifiedAnswerPagedList > .paged_list_wrapper > div[id][-ext-has='a[href][target="_blank"][rel="noopener nofollow"]:not(.external_link)']
 ! quora.com##.UnifiedAnswerPagedList > .paged_list_wrapper > div[id][-ext-has='a[href*="utm_medium"][target="_blank"][rel="noopener nofollow"]:not(.link_overlay)']
 ! quora.com##.UnifiedAnswerPagedList > .paged_list_wrapper > div[id][-ext-has='a[href][target="_blank"][rel="noopener nofollow"]:not(.link_overlay):contains(promo)']
-quora.com##.UnifiedAnswerPagedList > .paged_list_wrapper > div[id]:has(a[href][target="_blank"][rel="noopener nofollow"]):has( > div:contains(/promoted\s*by\s*/))
+quora.com##.UnifiedAnswerPagedList > .paged_list_wrapper > div[id]:has(a[href][target="_blank"][rel="noopener nofollow"]):has( > *:contains(/promoted\s*by\s*|sponsored\s*by\s*/))
 !! main page ad
 ! quora.com##.HomeMultifeed > .paged_list_wrapper[id*="paged_list_wrapper"] > div[id] > div[class]:not(.AnswerStoryBundle)[-ext-has='a[href][target="_blank"][rel="noopener nofollow"]:not(.external_link):not(.link_overlay)']
 ! quora.com##.HomeMultifeed > .paged_list_wrapper[id*="paged_list_wrapper"] > div[id] > div[class]:not(.AnswerStoryBundle)[-ext-has='a[href*="utm_medium"][target="_blank"][rel="noopener nofollow"]:not(.link_overlay)']
 ! quora.com##.HomeMultifeed > .paged_list_wrapper[id*="paged_list_wrapper"] > div[id] > div[class]:not(.AnswerStoryBundle)[-ext-has='a[href*="utm_"][target="_blank"][rel="noopener nofollow"]:not(.link_overlay)']
-quora.com##.HomeMultifeed > .paged_list_wrapper[id*="paged_list_wrapper"] > div[id] > div[class]:not(.AnswerStoryBundle):has(a[href][target="_blank"][rel="noopener nofollow"]):has( > div:contains(/promoted\s*by\s*/))
+quora.com##.HomeMultifeed > .paged_list_wrapper[id*="paged_list_wrapper"] > div[id] > div[class]:not(.AnswerStoryBundle):has(a[href][target="_blank"][rel="noopener nofollow"]):has( > div:contains(/promoted\s*by\s*|Sponsored/))
 !! main page ad when expanding answer
 ! quora.com##.AnswerStoryBundle .ToggleAnswerFooterWrapper > div[class][-ext-has='a[href][target="_blank"][rel="noopener nofollow"]:not(.external_link):not(.link_overlay)']
 ! quora.com##.AnswerStoryBundle .ToggleAnswerFooterWrapper > div[class][-ext-has='a[href*="utm_medium"][target="_blank"][rel="noopener nofollow"]:not(.link_overlay)']
@@ -295,7 +302,7 @@ imgrum.org##.module_blog_page > .blogpost_user_meta[-ext-has=">.adsbygoogle"]
 ! https://forum.adguard.com/index.php?threads/25038/
 cutestat.com##.stat_details > div.marginBottom_10 > div.stat_half_left[-ext-has="> div > script:contains(window._mNHandle.queue.push)"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6638
-rarbg.to,rarbg-to.proxydude.xyz,rarbg-to.pbproxy.red,rarbg.unblocked.lol,rarbg.pbproxy2.co##td[align="justify"] > div > table[width="100%"][class="lista"] > tbody > tr[-ext-has='tr > td + td[style*="height:"]']
+rarbgproxied.org,rarbg.to,rarbg-to.proxydude.xyz,rarbg-to.pbproxy.red,rarbg.unblocked.lol,rarbg.pbproxy2.co##td[align="justify"] > div > table[width="100%"][class="lista"] > tbody > tr[-ext-has='tr > td + td[style*="height:"]']
 ! Ads replacement script (trafmag.com)
 alluc.ee###resultlist > div#resultitems[-ext-has="> div"]~iframe:not([src])
 !

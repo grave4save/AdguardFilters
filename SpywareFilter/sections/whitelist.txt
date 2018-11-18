@@ -1,4 +1,8 @@
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/25189
+@@||static.chartbeat.com/js/chartbeat_mab.js$domain=ny1.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/25320
+@@||google-analytics.com/analytics.js$domain=antenaplay.ro
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24812
 @@||lprs*.fr/assets/js/lib/squid/smarttag.js$domain=leparisien.fr
 ! handelsblatt.com - misaligned text in article
@@ -186,7 +190,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ! https://github.com/AdguardTeam/AdguardFilters/issues/17602
 @@||googletagmanager.com/gtm.js$domain=iphoneitalia.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/17342
-@@||sb.scorecardresearch.com/beacon.js$domain=animalplanet.com 
+@@||sb.scorecardresearch.com/beacon.js$domain=animalplanet.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/17373
 @@||api.dmcdn.net/pxl/cpe/client.min.js$domain=m.sondakika.com
 @@||api.dmcdn.net/pxl/cpe/app.min.js$domain=m.sondakika.com
@@ -580,7 +584,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 @@||adblockanalytics.com/ads.js|
 @@||detectadblock.com/ads.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6269
-@@||ukit.com/js/lib/fingerprint2.min.js^$domain=ukit.com
+@@/fingerprint2.min.js^$domain=justfreethemes.com|ukit.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6216
 @@||tags.tiqcdn.com/utag/hsbc/au-rbwm/prod/utag.js$domain=hsbc.com.au|hsbc.com.au
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6197

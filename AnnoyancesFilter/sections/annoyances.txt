@@ -1,6 +1,10 @@
 !
 !######### Annoying elements (not ads)
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/25359
+||recoprofile.rediff.com/news_recommendation/news_template.html
+||shopping.rediff.com/trending-now/widget
+||mshop.rediff.com/trending-now/widget
 ! quora.com - login window on question
 quora.com##div[id$="_signup_wall_wrapper"]:empty 
 quora.com#$#.signup_wall_prevent_scroll { overflow: auto!important; position: inherit!important; } 
@@ -818,14 +822,19 @@ cloud.mail.ru##div[class^="portal-promo-manager"]
 cloud.mail.ru##div[class^="portal-promo-manager"]+div[onclick="this.querySelector('a').click();"]
 cloud.mail.ru##.b-bubble__wrapper
 ! popups
-lady.mail.ru##.m-subscription
-horo.mail.ru##.js-promo-popup
+mail.ru##.m-subscription
+mail.ru##.js-promo-popup
 
 
 ! END: mail.ru
 !***
 !* Subscriptions/newsletters (not popups)
 !*
+geeksultd.com###post-newsletter
+geeksultd.com###tie-newsletter-3
+reviewjournal.com##.Mg2-newsletter-inline_notif_mng
+abdullinru.ru##.ez_form_sendpulse
+don24.ru##.share-yandex-block
 itpro.co.uk###sidebar-second > #block-boxes-subscription-promo-content
 inforeactor.ru##.yandex-widget
 cooking.nytimes.com##.recipe-newsletter-signup 

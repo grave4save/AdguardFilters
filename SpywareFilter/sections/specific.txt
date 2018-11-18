@@ -4,6 +4,18 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/22746
 ||ci.phncdn.com/www-static/js/ph-tracking.js$important
 !
+/bcommon/js/trckUtil.min.js$domain=buffed.de|gamesaktuell.de|videogameszone.de|gamezone.de|pcgames.de|pcgameshardware.de
+||secure.agoda.com/pixel.gif
+||agoda.com/api/pixel/index?
+||washingtonpost.com/wp-stat/analytics/latest/main.js
+||d1d3jupgwm7m5r.cloudfront.net/prod/cloudfrontVideoTracker.
+||united-infos.net/event^
+||juicebeard.prod.tda.link/rec/*/tracking^
+||track.tagesanzeiger.ch/cre*/static/tracking^
+||injapan.com/rest/*/track?*&callback=
+||youlead.pl/track?
+||tms.marriott.com/error/e.gif
+||kodik.cc/stats
 ||redditstatic.com/ads/pixel.js
 ||cdn.ustatik.com/vendor/metrica/watch.js
 ||rp-online.de/cre*/tracking^
@@ -800,6 +812,8 @@ reuters.com###taboola-recirc
 ||api.netmera.com/event^
 ||addefend-platform.com/s?
 ||weltsport.appspot.com/hstrck-detect.js^
+drive2.ru##.js-page > * > .dv-post-header > [class] > [class] > [id] > [class][id]
+drive2.ru##.o-columns > .o-columns__side > [class] > [class][id] > [class][id]
 drive2.ru,drive2.com##.is-tracked[data-metrika="recomm"]
 drive2.ru,drive2.com##.js-scrolltracking[data-adkind="relap"]
 ||prezi.com/*/log/json^
@@ -1047,7 +1061,6 @@ dreamprogs.net##td[width="88"][height="31"]
 ||fullstory.com/s/fs.js^
 ||g.msn.com^
 ||gamespot.com/js/compiled/trackingWithCT.js
-||gamezone.de/bcommon/js/trckUtil.min.js
 ||gamona.de/*package/smbanalyticstracking
 ||gazisoft.com/alexa/
 ||geekchart.net/req.php
@@ -1210,9 +1223,7 @@ dreamprogs.net##td[width="88"][height="31"]
 ||partner.rozetka.com.ua/ret_pixels/
 ||paypal.com/webapps/beaconweb/
 ||paypal.com^*/pixel.gif$third-party
-||pcgames.de/bcommon/js/trckUtil.min.js
 ||pcgames.de/webservices/socialShareCount.php
-||pcgameshardware.de/bcommon/js/trckUtil.min.js
 ||pcgameshardware.de/webservices/socialShareCount.php
 ||pclick.yahoo.com^
 ||pcnet.com.tr/?wordfence_logHuman=

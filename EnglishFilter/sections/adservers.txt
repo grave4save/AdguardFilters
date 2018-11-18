@@ -3,6 +3,25 @@
 !
 ! The rules with hints are at the end of file
 !
+||ads.avocet.io^$third-party
+||hgub2polye.com^$third-party
+||ihowed.info^$third-party
+||siterdm.com^$third-party
+||bokeden.com^$third-party
+||ceehimur.uk^$third-party
+||weedazou.net^$third-party
+||pushanert.com^$third-party
+||pushwhy.com^$third-party
+||rtbvideobox.com^$third-party
+||nauchegy.link^$third-party
+||lcwfab1.com^$third-party
+||fuxoasim.link^$third-party
+||oagudsey.uk^
+||ukdtx.31202.fun^$third-party
+||nativepu.sh^$third-party
+||glothouw.link^$third-party
+||a.doko.moe^$third-party
+||renaissanto.com^$third-party
 ||6c4t5.cn^$third-party
 ||201d5.cn^$third-party
 ||housineschard.info^$third-party

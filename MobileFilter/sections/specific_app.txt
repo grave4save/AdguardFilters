@@ -12,6 +12,7 @@
 ! Google ads (be careful)
 ||googleads.g.doubleclick.net^$app=world.cup|com.ludo.king
 ! Blocking of Facebook ads
+||graph.facebook.com^$app=best.hd.uhd.amoled.wallpapers
 ||graph.facebook.com^$app=com.tourbillon.freeappsnow
 ||graph.facebook.com^$app=com.acg.manga
 ||graph.facebook.com^$app=com.bloodyluna.TaipeiMetroTimeAndFace
@@ -136,6 +137,8 @@
 ||graph.facebook.com^$app=com.quoord.tapatalkpro.activity
 ||graph.facebook.com^$app=com.teeonsoft.ztorrent
 !
+! 
+@@||imasdk.googleapis.com^|$app=com.nhl.gc1112.free|com.nhl.hattrickchallenge
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24782
 ||api.rvuzov.ru/images/c4ac821d-4580-4011-a402-3de5d38b5709.jpg
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24907
@@ -281,7 +284,7 @@
 ||global.appnext.com/offerWallApi.aspx
 ! https://github.com/AdguardTeam/AdguardFilters/issues/3346
 ||api.ebay-kleinanzeigen.de/api/ads.json*^q=$app=com.ebay.kleinanzeigen,replace=/"(adsense|ecn|native-ad)"/"x\$1"/
-! https://forum.adguard.com/index.php?threads/le-bon-coin-apk-from-googleplay.18840/ 
+! https://forum.adguard.com/index.php?threads/le-bon-coin-apk-from-googleplay.18840/
 ! fix ?ad_id= in Liste FR
 @@||mobile.leboncoin.fr/templates/api/view.json?ad_id=$app=fr.leboncoin
 ! https://github.com/AdguardTeam/AdguardFilters/issues/5191

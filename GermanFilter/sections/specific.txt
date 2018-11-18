@@ -27,6 +27,12 @@ lvz.de##.pdma-adaside
 ||cluster-*.cdnjquery.com^$domain=woxikon.de|notebookcheck.com|dict.cc
 ||*snigelweb-com.videoplayerhub.com^$domain=tellows.de|woxikon.de|notebookcheck.com|dict.cc
 !
+rp-online.de##.park-portal--billboard
+boerse-express.com##.page-container > .size-4 > .logoplacements-container
+||d1rkf0bq85yx06.cloudfront.net/anprebid^
+infranken.de###plistasection
+forum.digitalfernsehen.de##.messageContent blockquote > div[id][style*="width:300px;height:250px"] + div:not([class]):not([id])
+gofeminin.de###precontent
 rundschau-online.de##article.dm_ta620x300 > a.trackedTeaser
 rundschau-online.de##article.dm_ta300x300 > a.trackedTeaser
 rheinische-anzeigenblaetter.de##.dm_ad
@@ -54,7 +60,7 @@ netdoktor.de###header-ad-slot
 waz.de##.block-header--banner > a:not([href*="waz.de"])
 ||compact-online.de/wp-content/uploads/*/-anzeige-300x250
 wiwo.de##.c-teasergallery--ressort
-kn-online.de##.pdb-div-gpt-footerad 
+kn-online.de##.pdb-div-gpt-footerad
 stern.de##.vergleichsinfo
 stern.de##section[data-name^="Vermarktung"]
 stern.de##section[data-name^="Homepage_3er-Kachel-Reisewelten"]
@@ -121,7 +127,7 @@ heise.de##amp-embed[type="outbrain"]
 heise.de##.tipps-content-ad
 pnn.de##.box-plista
 pnn.de##div[id^="urban-medrect"]
-finanzen.net###fnb-popup-integration
+finanzen.at,finanzen.net###fnb-popup-integration
 frankenpost.de##.werb4
 contra-magazin.com##.entry > .code-block
 telebasel.ch##div[class^="tb-ad-"]
@@ -248,7 +254,7 @@ tvdigital.de,hoerzu.de##a[href^="https://www.werstreamt.es"]
 ||d163w5bauk02b4.cloudfront.net/partner^$third-party
 chip.de##.WidgetVetalio
 ||hardwareluxx.de/images/stories/werbung^
-hardwareluxx.de##.cc_banner-wrapper 
+hardwareluxx.de##.cc_banner-wrapper
 hardwareluxx.de##a.center[href^="https://adclick"]
 chip.de##a[href^="https://clkde.tradedoubler.com"]
 t-online.de##div[itemprop="articleBody"] .TshowLinkInXML > a[href^="https://www.tipico.de"]
@@ -1043,7 +1049,6 @@ pnp.de##.em_modul_box_type_1
 gamestar.de##.pv-teaser-pricecompare
 extreme.pcgameshardware.de###post_rec2
 ||gamesaktuell.de/tsimg/$image
-gamesaktuell.de##.topFrameEddie
 forum.gamesaktuell.de##.posts > ul > li.postbitlegacy#post_rec
 gamesaktuell.de###pricehitsTextTeaser
 heise.de##.widget-werbung
@@ -1572,7 +1577,7 @@ pcgameshardware.de###plakatinhalttag_1
 pcgameshardware.de###plakatinhalttag_2
 pcgames.de,pcgameshardware.de###pricehitsTextTeaser
 pcgameshardware.de##.contentFrameEddie
-pcgameshardware.de##.topFrameEddie
+videogameszone.de,gamesaktuell.de,pcgameshardware.de##.topFrameEddie
 futurezone.at##div[class*="karriereat"]
 ||durchblicker.at/iframes^$third-party
 merkur.de##.id-Container--promotion

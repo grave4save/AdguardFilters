@@ -11,8 +11,14 @@
 ||um-public-panel-prod.s3.amazonaws.com^
 ||collection-endpoint-prod.herokuapp.com^
 ||collection-endpoint-staging.herokuapp.com^
-! end: 
+! end:
 !
+||analytics.businessinsider.com^
+||tracking.hotel.check24.de^
+||stats01.20min.ch^
+||tracking.gj-mobile-services.de^
+||eventlog.outbrain.com^
+||smetrics.marriott.com^
 ||api.logmatic.io^$third-party
 ||adc.9news.com.au^
 ||adc.api.nine.com.au^
@@ -1222,7 +1228,6 @@ charlestownwyllie.oaklawnnonantum.com^
 ||analytics.vadio.com^
 ||analytics.xyscdn.com^
 ||app.adjust.io^
-||ascstats.iobit.com^
 ||b-aws.aol.com^
 ||b-aws.huffingtonpost.com^
 ||b.huffingtonpost.com^

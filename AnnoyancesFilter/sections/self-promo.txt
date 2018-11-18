@@ -36,10 +36,12 @@ radio.yandex.by,radio.yandex.kz,radio.yandex.ru,radio.yandex.ua##.page-station__
 @@||yastatic.net/daas/atom.js$domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|mail.yandex.com|mail.yandex.com.tr
 !-----------------------------------------------
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/21439
+twitch.tv##main.tw-flex > div[class]:not([data-test-selector]) > div[data-test-selector="test_selector_prime_tracking_button_wrapper"]
 ! amazon self-promo in item descriptions
 amazon.de,amazon.co.uk###detail-ilm_div
 amazon.co.uk###heroQuickPromo_feature_div
-amazon.co.uk###sims-consolidated-3_feature_div
+amazon.co.uk###dp-container > div[id^="sims-consolidated-"][id*="_feature_div"][-ext-has='img#banner_image']
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24194
 trakt.tv###huckster-mobile-square-wrapper
 ! notizie.tiscali.it in article
@@ -74,7 +76,7 @@ designhill.com##a[href*="&utm_source"][href*="utm_medium"][target="_blank"]
 designhill.com##.dhBlog-graphic
 designhill.com##.sidebar-widget--div
 ! https://github.com/AdguardTeam/AdguardFilters/issues/22460
-9to5mac.com##.author-bio-container > .author-gear
+electrek.co,9to5mac.com##.author-bio-container > .author-gear
 ! https://github.com/AdguardTeam/AdguardFilters/issues/22207
 perspective-daily.de###trialsignuppopup
 perspective-daily.de##md-backdrop

@@ -74,6 +74,11 @@ copypastecharacter.com#$##contents { visibility: visible!important; }
 ! END: Temporary
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/25175
+speed4up.com#@#.adstop
+speed4up.com#@#.adsTop
+! https://github.com/AdguardTeam/AdguardFilters/issues/25103
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=nhl.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24573
 @@||hdvid.tv/js/jquery.min.js
 @@||hdvid.tv/js/jquery.cookie.js
@@ -111,7 +116,7 @@ spotify.com#@#.m-ad
 @@||cdn.pogo.com/*/exhibit/imasdk/imasdk-pogo-1.0.js
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=pogo.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24182
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js^$domain=tw.video.appledaily.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=appledaily.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24117
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=medyaradar.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24201
@@ -242,7 +247,9 @@ xfinity.com#@#.right-banner
 @@||cdn.jsdelivr.net/combine/npm/jquery
 ! https://github.com/AdguardTeam/AdguardFilters/issues/20945
 @@||tampabay.com/resources/scripts/dfp/adbridg.js
+! https://github.com/AdguardTeam/AdguardFilters/issues/24813
 ! https://github.com/AdguardTeam/AdguardFilters/issues/21050
+@@||funmanga.com/uploads$image,domain=kissmanga.com
 @@||anyacg.co^$image,domain=kissmanga.com
 ! chip.de - when clicking on discount popup rule closes it.
 @@||ad.doubleclick.net/ddm/trackclk^$domain=partners.webmasterplan.com
@@ -492,7 +499,7 @@ pornhub.com#@#[style] > div > iframe[width]:first-child
 !+ PLATFORM(ext_edge)
 @@||docs.google.com^$document
 ! Reported: https://forums.lanik.us/viewtopic.php?f=64&t=35443&p=117720#p117720
-pornhub.com#@#.sectionWrapper > div[class*=" "]:not([class="sectionTitle"]):not([class="reset"]) 
+pornhub.com#@#.sectionWrapper > div[class*=" "]:not([class="sectionTitle"]):not([class="reset"])
 ! https://github.com/AdguardTeam/AdguardForWindows/issues/1273
 @@||southpark.cc.com^$jsinject
 ! https://github.com/AdguardTeam/AdguardForWindows/issues/464
@@ -582,7 +589,9 @@ readwhere.com#@#.adunit
 @@||memecenter.com/app/
 @@||memecenter.com/comments/get_comments
 @@||memecenter.com/comments/add_comment
+! https://github.com/AdguardTeam/AdguardFilters/issues/24677
 ! https://github.com/AdguardTeam/AdguardFilters/issues/20277
+@@||gentside.com/js/prebid/others.*.js
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=gentside.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/19663
 @@||tbs.com/modules/custom/ten_libraries/reusedFrom*/adHelper.js$~third-party
@@ -787,7 +796,7 @@ hyperdebrid.net#@%#(function() { var sto = window.setTimeout, re = /\.bab_elemen
 @@||zone.msn.com/js/gameplayer/admanager.js$domain=zone.msn.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/13344
 @@/OutbrainWidgetConnector.js$domain=foxnews.com
-! https://github.com/AdguardTeam/AdguardFilters/issues/12580 
+! https://github.com/AdguardTeam/AdguardFilters/issues/12580
 @@/videoplayback?vid=*&domain=*.drive.google.com$domain=kissanime.ru
 ! https://github.com/AdguardTeam/AdguardFilters/issues/13423
 @@||manastaynight11.blogspot.dk^$generichide
@@ -1570,7 +1579,7 @@ pogo.com#@##leaderboard-ad
 @@||ag.innovid.com/dv/sync$domain=mylifetime.com
 @@||pixel.sitescout.com^$domain=mylifetime.com
 @@||bea4.v.fwmrm.net^$domain=mylifetime.com
-@@adm.fwmrm.net/p/aetn_live/AdManager.swf$domain=mylifetime.com|aetnd.com 
+@@adm.fwmrm.net/p/aetn_live/AdManager.swf$domain=mylifetime.com|aetnd.com
 @@||c.amazon-adsystem.com/aax2/amzn_ads.js$domain=mylifetime.com
 @@||serving-sys.com^$domain=mylifetime.com
 @@||aax.amazon-adsystem.com^$domain=mylifetime.com

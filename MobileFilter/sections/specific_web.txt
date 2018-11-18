@@ -38,6 +38,12 @@ anwap.club,anwap.film,anwap.mobi##body > div[class] > a > strong
 !+ NOT_PLATFORM(ios, ext_android_cb)
 ||mobile.donanimhaber.com/ads^
 !
+||forum.lowyat.net/random-mobile.php
+forum.lowyat.net###ipbwrapper > div[style="padding:10px 0;min-height:100px;"][align="center"]:not([class]):not([id])
+apkpure.com##.fast-download-box+ .slide-wrap > .bd > .tempWrap > ul[style^="width:"] > li[style*="display: table-cell;"] > a[href^="https://yaksgames.com/?utm_source"]
+pixiv.net##div[class="overlay geta"]
+m.investing.com##.adDrawer
+m.tudotv.tv##div[style="text-align:center"] > a[rel="nofollow"] > img
 m.halihali.tv##a[href^="https://s.click.taobao.com/"] > img
 indianexpress.com##.adbox-border
 mdpr.jp##.recommend-dd-link
@@ -294,7 +300,7 @@ imzog.com##div[id^="im-vda"]
 businessinsider.com##.river-ad
 hdmotori.it###skin_mobile
 szifon.com##.wptouch-showcase
-m.prohardver.hu,m.mobilarena.hu##.xabrecontainer 
+m.prohardver.hu,m.mobilarena.hu##.xabrecontainer
 mobile.linuxtoday.com###ic_Ad
 mobile.linuxtoday.com###m_imuAd
 mobile.linuxtoday.com###article-body > #ic_imu-1
@@ -310,7 +316,7 @@ s.famitsu.com##.l-ad-block
 japantoday.com##div[data-href^="https://go.injapan.com/zP2Vrj"]
 m.blogtruyen.com##.container > .qc-inner
 m.blogtruyen.com##center > a[href][target="_blank"] > img
-yemek-com.cdn.ampproject.org##.recipeContent > .printHidden 
+yemek-com.cdn.ampproject.org##.recipeContent > .printHidden
 amp.indiatimes.com##.ad-container
 m.auto.ru##.commercial-listing > div.commercial-listing-item-wrapper > div[id]:not([class*="Listing"]):not([class*="item"])
 m.auto.ru##div[data-bem*="\"ad\":true"]
@@ -514,7 +520,7 @@ m.haberturk.com##.advertisement
 m.haberturk.com##a[data-newscategory="Advertorial"]
 wccftech-com.cdn.ampproject.org##.amp-ad
 mobile.donanimhaber.com##div[style$="width:320px; height:100px;"]
-mobile.donanimhaber.com##.yorumlar > div.ondabir > div.gorsel 
+mobile.donanimhaber.com##.yorumlar > div.ondabir > div.gorsel
 m.nuvid.com##.partner_text_link
 promiflash.de##aside.container > .onlyMobile
 promiflash.de##.articleList > .cardContainer + .onlyMobile[style^="margin:"]

@@ -4,6 +4,8 @@
 !+ NOT_OPTIMIZED
 ##.cookie-banner:not(body):not(html)
 !
+##.O-CookieLaw
+##.o-cookielaw
 ##.gpm-cookie-accepted
 ##cloudflare-app[app="cookiless"]
 ###privacy-consent
@@ -1205,7 +1207,7 @@
 ##.cookiespolicy
 ##.cookiestrip
 ##.cookietext
-##.cookiewall:not(body)
+##.cookiewall:not(body):not(html)
 ~samsung.com##.cookiewarning:not(body)
 ##.cookiewrapper
 ##.cookskom
@@ -1389,6 +1391,7 @@
 !#######################################################
 !######### General URL blocking rules ##################
 !#######################################################
+||oil.axelspringer.com^$third-party
 /penton_gdpr.js
 ||consent.cmp.oath.com^$third-party
 ||cookielaw.org^$third-party

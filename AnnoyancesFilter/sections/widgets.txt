@@ -19,6 +19,8 @@ mhealth.ru##.incut_readmore
 !
 ! START: Adviser/online-consultant/feedback widgets
 !
+||callback.onlinepbx.ru^$third-party
+||widget.textback.io^$third-party
 ||widget.manychat.com^$third-party
 .ru/proxy_*.php?init_widget=$script
 ||widget-static.com^$third-party
@@ -106,12 +108,15 @@ networkguru.ru##.tbForm_CallMe
 ||livetex.ru/js/client.js$third-party,domain=~tele2.ru
 ||zopim.com^$third-party,domain=~help.ubnt.com|~nordvpn.com|~egb.com|~amaysim.com.au
 !
+! ||cdn.bitrix24.ru/*/crm/site_button/$domain=oboitrade.ru|vistasport.ru|sportfood40.ru|infocomshop.ru
+||cdn.bitrix24.ru/*/crm/site_button/loader_
+!
+mylivecricket.info##iframe[src^="http://st.chatango.com/"]
 ||jilishnik.ru/_*.php$script
 nahnews.org##.zenLink
 ||s.blamper.ru/js/app/widgets/common/FakeChat/
 ||mobitorg.phonet.com.ua/public/widget/call-catcher/
 ||101urist.com/_*.php$script
-||cdn.bitrix24.ru/*/crm/site_button/$domain=vistasport.ru|sportfood40.ru|infocomshop.ru
 brainklinik.ru###topPhonex
 f.ua##.callback_buttons
 citrus.ua##.citrus-message-button
@@ -232,7 +237,7 @@ rosbalt.ru##.ad_tele
 ||informer.minfin.com.ua
 ||kurs.com.ua/informer/$third-party
 ||kurs.com.ru/informer/$third-party
-! 
+!
 dimnovyn.com##.right > section.side_block:contains(Валюта)
 !
 !***
